@@ -45,7 +45,7 @@ const Scene = () => {
       <Text children="I love you Tinji!" position={[-7, 5, -19]} fontSize={5} rotation={[0.1, -2.8, 0]} scale={[0.8, 0.8, 50]} color="red" anchorX="center" anchorY="middle" />
       
       {/* Optionally, use OrbitControls to always keep the focus on the model */}
-      <OrbitControls target={[0, 0, 0]} enableZoom={false} enablePan={false} enableRotate={false}/>
+      <OrbitControls target={[0, 0, 0]} enableZoom={true} enablePan={false} enableRotate={true}/>
     </>
   );
 }
