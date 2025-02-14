@@ -8,13 +8,12 @@ Title: Heart(Low-poly)
 */
 
 import React, { useState } from 'react'
-import { useGLTF, useAnimations, useCursor } from '@react-three/drei'
+import { useGLTF, useCursor } from '@react-three/drei'
 
 export function Heart(props) {
   const [hover, setHover] = useState(false);
   const group = React.useRef()
-  const { nodes, materials, animations } = useGLTF('/heartlow-poly.glb')
-  const { actions } = useAnimations(animations, group)
+  const { nodes, materials } = useGLTF('/heartlow-poly.glb')
 
   useCursor(hover);
   return (
