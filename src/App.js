@@ -12,6 +12,7 @@ import { Heart } from "./Heartlow-poly"
 import { Goose } from "./Goose_low_poly"
 import { Chair } from './Chair_low_poly';
 import { Suitcase } from './Suitcase_low_poly';
+import { Shark } from './Low_poly_shark'
 import { useState } from 'react';
 
 const Scene = () => {
@@ -45,6 +46,7 @@ const Scene = () => {
       <Heart position={[-3, 14, -10]} rotation={[-0.2, 0.5, 0]} scale={[5, 5, 4]} onClick={() => setLetter(!letter)}/>
       <Suitcase scale={[0.75, 0.5, 0.5]} position={[-3, 9, 15]} rotation={[0, 1, 0]}/>
       <Chair scale={0.02} position={[-5, 8, 12]}/>
+      <Shark scale={0.01} position={[5, 6, 1]} rotation={[0, -2, 0]}/>
       <Text children="L+R" position={[-1, 22, -7]} fontSize={5} rotation={[0, 0.5, 0]} scale={[1, 1, 50]} color="#3b3b3b" anchorX="center" anchorY="middle" />
       <Text children="I love you Tinji!" position={[-7, 5, -19]} fontSize={5} rotation={[0.1, -2.8, 0]} scale={[0.8, 0.8, 50]} color="red" anchorX="center" anchorY="middle" />
       
